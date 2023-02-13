@@ -1,0 +1,26 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Production",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "args": ["--dart-define=NVO_BASEURL=https://api.envio.co.id/v1/"]
+    },
+    {
+      "name": "Sandbox",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "args": ["--dart-define=NVO_BASEURL=https://api.envio.co.id/sandbox/"]
+    },
+    {
+      "name": "Development",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "args": ["--dart-define=NVO_BASEURL=https://api.envio.co.id/dev/"]
+    }
+  ]
+}
